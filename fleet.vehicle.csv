@@ -1,0 +1,6 @@
+"name","license_plate","brand,model","year","current_mileage","itv_valid,owner_name","owner_dni"
+"Coche 1","1234 ABC","Toyota","Yaris",2019,15000,True,"Propietario 1",12345678A
+"Coche 2","5678 DEF","Ford","Focus",2018,20000,False,"Propietario 2",87654321B
+"Coche 3","9012 GHI","Seat","Ibiza",2020,10000,True,"Propietario 3",13579246C
+"Coche 4",5243 TAB,"BMW", "Ibiza", 2018,20000,True,"Propietario 4",12739261Q
+"Coche 5",7619 ABG,"Mercedes","Ford",2019,10000,False,"Propietario 5",91283518H  
