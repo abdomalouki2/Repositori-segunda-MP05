@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="fleet_vehicle_list">
+            <field name="name">fleet.vehicle.list</field>
+            <field name="model">fleet.vehicle</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="license_plate"/>
+                    <field name="brand"/>
+                    <field name="model"/>
+                    <field name="year"/>
+                    <field name="current_mileage"/>
+                    <field name="itv_valid"/>
+                    <field name="owner_name"/>
+                    <field name="owner_dni"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="fleet_vehicle_form">
+            <field name="name">fleet.vehicle.form</field>
+            <field name="model">fleet.vehicle</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="license_plate"/>
+                            <field name="brand"/>
+                            <field name="model"/>
+                            <field name="year"/>
+                            <field name="current_mileage"/>
+                            <field name="itv_valid"/>
+                            <field name="owner_name"/>
+                            <field name="owner_dni"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <menuitem name="Vehicles" id="fleet_vehicle_menu" />
+        <menuitem name="Vehicles" id="fleet_vehicle_menu_main" parent="fleet_vehicle_menu" action="fleet_vehicle_list" />
+
+    </data>
+</odoo>
