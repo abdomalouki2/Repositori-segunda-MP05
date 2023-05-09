@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_fleet_vehicle_user,Fleet Vehicle User Access,fleet.model_fleet_vehicle,base.group_user,1,0,0,0
+access_fleet_vehicle_manager,Fleet Vehicle Manager Access,fleet.model_fleet_vehicle,fleet.group_fleet_manager,1,1,1,1
