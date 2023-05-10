@@ -3,7 +3,8 @@ from odoo import models, fields
 class Vehicle(models.Model):
     _name = 'fleet.vehicle'
     _description = 'Vehicle'
-
+    _order='name'
+    name = fields.Char(string='name')
     license_plate = fields.Char(string='Matrícula')
     brand = fields.Char(string='Marca')
     model = fields.Char(string='Model')
