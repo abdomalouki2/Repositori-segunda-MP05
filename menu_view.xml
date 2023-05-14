@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
-        <menuitem id="fleet_menu_root" name="Fleet" sequence="10"/>
+        <menuitem
+	    id="fleet_menu_root"
+ 	    name="Fleet"
+ 	    sequence="10"/>
         
-        <menuitem id="fleet_vehicles_menu" name="Vehicles" parent="fleet_menu_root" sequence="1"/>
+        <menuitem 
+		id="fleet_submenu"
+ 		name="Vehicles"
+ 		parent="fleet_menu_root"
+ 		sequence="1"/>
         
-        <menuitem id="fleet_vehicle_management" name="Vehicle Management" parent="fleet_vehicles_menu" action="fleet_vehicle_action" sequence="1"/>
-        
-        <record id="fleet_vehicle_action" model="ir.actions.act_window">
-            <field name="name">Vehicle Management</field>
-            <field name="res_model">fleet.vehicle</field>
-            <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
-        </record>
-    </data>
+        <menuitem
+	    id="fleet_management"
+ 	    name="Manage"
+ 	    parent="fleet_submenu"
+ 	    action="fleet_vehicle_action"
+ 	    sequence="1"/>
 </odoo>
